@@ -1,888 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, viewport-fit=cover"
-		/>
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Ewe Alphabets - Emerging English Coaching</title>
-		<!-- CSS files -->
-		<link href="./dist/css/tabler.min.css?1668287865" rel="stylesheet" />
-		<link href="./dist/css/demo.min.css?1668287865" rel="stylesheet" />
-		<style>
-			@import url("https://rsms.me/inter/inter.css");
-			:root {
-				--tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont,
-					San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-			}
-		</style>
-	</head>
-	<body>
-		<script src="./dist/js/demo-theme.min.js?1668287865"></script>
-		<div class="page">
-			<!-- Navbar -->
-			<header class="navbar navbar-expand-md navbar-light d-print-none">
-				<div class="container-xl">
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbar-menu"
-						aria-controls="navbar-menu"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<h1
-						class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"
-					>
-						<a href="#">
-							<h3>Ewe Alphabets</h3>
-						</a>
-					</h1>
-					<div class="navbar-nav flex-row order-md-last">
-						<div class="nav-item d-none d-md-flex me-3">
-							<div class="btn-list"></div>
-						</div>
-						<div class="d-none d-md-flex">
-							<a
-								href="?theme=dark"
-								class="nav-link px-0 hide-theme-dark"
-								title="Enable dark mode"
-								data-bs-toggle="tooltip"
-								data-bs-placement="bottom"
-							>
-								Toogle Dark Mode &nbsp
-								<!-- Download SVG icon from http://tabler-icons.io/i/moon -->
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="icon"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									stroke-width="2"
-									stroke="currentColor"
-									fill="none"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-									<path
-										d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
-									/>
-								</svg>
-							</a>
-							<a
-								href="?theme=light"
-								class="nav-link px-0 hide-theme-light"
-								title="Enable light mode"
-								data-bs-toggle="tooltip"
-								data-bs-placement="bottom"
-								>Toggle Light Mode &nbsp
-								<!-- Download SVG icon from http://tabler-icons.io/i/sun -->
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="icon"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									stroke-width="2"
-									stroke="currentColor"
-									fill="none"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								>
-									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-									<circle cx="12" cy="12" r="4" />
-									<path
-										d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
-									/>
-								</svg>
-							</a>
-							<div class="nav-item dropdown d-none d-md-flex me-3"></div>
-						</div>
-					</div>
-				</div>
-			</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ewe Alphabets - Emerging English Coaching</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1668287865" rel="stylesheet" />
+    <link href="./dist/css/demo.min.css?1668287865" rel="stylesheet" />
+    <link href="./dist/css/custom.css" rel="stylesheet" />
+    <style>
+      @import url("https://rsms.me/inter/inter.css");
+      :root {
+        --tblr-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont,
+          San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./dist/js/demo-theme.min.js?1668287865"></script>
+    <div class="page">
+      <!-- Navbar -->
+      <header class="navbar navbar-expand-md navbar-light d-print-none">
+        <div class="container-xl">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-menu"
+            aria-controls="navbar-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1
+            class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3"
+          >
+            <a href="#">
+              <h3>Ewe Alphabets</h3>
+            </a>
+          </h1>
+          <div class="navbar-nav flex-row order-md-last">
+            <div class="nav-item d-none d-md-flex me-3">
+              <div class="btn-list"></div>
+            </div>
+            <div class="d-none d-md-flex">
+              <a
+                href="?theme=dark"
+                class="nav-link px-0 hide-theme-dark"
+                title="Enable dark mode"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              >
+                Toogle Dark Mode &nbsp
+                <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="?theme=light"
+                class="nav-link px-0 hide-theme-light"
+                title="Enable light mode"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                >Toggle Light Mode &nbsp
+                <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path
+                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                  />
+                </svg>
+              </a>
+              <div class="nav-item dropdown d-none d-md-flex me-3"></div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-			<div class="page-wrapper">
-				<!-- Page header -->
+      <div class="page-wrapper">
+        <!-- Page header -->
 
-				<!-- Page body -->
-				<div class="page-body">
-					<div class="container-xl">
-						<h1>Ɛʋɛ(gbe) <br><span class="text-muted">Ewe(gbe) [ɛ'βɛ]</span></h1>
-						<div class="row row-deck row-cards">
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															A a
-														</div>
-														<div class="text-muted">[a]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															B b
-														</div>
-														<div class="text-muted">[b]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															D d
-														</div>
-														<div class="text-muted">[d]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Đ ɖ
-														</div>
-														<div class="text-muted">[ɖ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Dz dz
-														</div>
-														<div class="text-muted">[ʣ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															E e
-														</div>
-														<div class="text-muted">[e]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ɛ ɛ
-														</div>
-														<div class="text-muted">[ɛ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ə ə
-														</div>
-														<div class="text-muted">[ə]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															F f
-														</div>
-														<div class="text-muted">[f]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ƒ ƒ
-														</div>
-														<div class="text-muted">[ɸ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															G g
-														</div>
-														<div class="text-muted">[g]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Gb gb
-														</div>
-														<div class="text-muted">[gb͡]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ɣ ɣ
-														</div>
-														<div class="text-muted">[ɣ~ʁ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															H h
-														</div>
-														<div class="text-muted">[h]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															I i
-														</div>
-														<div class="text-muted">[i]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															K k
-														</div>
-														<div class="text-muted">[k]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Kp kp
-														</div>
-														<div class="text-muted">[kp͡]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															L l
-														</div>
-														<div class="text-muted">[l]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															M m
-														</div>
-														<div class="text-muted">[m/m̩]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															N n
-														</div>
-														<div class="text-muted">[n]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ny ny
-														</div>
-														<div class="text-muted">[ɲ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ŋ ŋ
-														</div>
-														<div class="text-muted">[ŋ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															O o
-														</div>
-														<div class="text-muted">[o]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ɔ ɔ
-														</div>
-														<div class="text-muted">[ɔ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															P p
-														</div>
-														<div class="text-muted">[p]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															R r
-														</div>
-														<div class="text-muted">[r]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															S s
-														</div>
-														<div class="text-muted">[s]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															T t
-														</div>
-														<div class="text-muted">[t]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ts ts
-														</div>
-														<div class="text-muted">[ʦ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															U u
-														</div>
-														<div class="text-muted">[u]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															V v
-														</div>
-														<div class="text-muted">[v]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Ʋ ʋ
-														</div>
-														<div class="text-muted">[β]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															W w
-														</div>
-														<div class="text-muted">[w]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															X x
-														</div>
-														<div class="text-muted">[x]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Y y
-														</div>
-														<div class="text-muted">[y]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															Z z
-														</div>
-														<div class="text-muted">[z]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<h3>Other letters/letter combinations</h3>
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ã
-														</div>
-														<div class="text-muted">[ã]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															dy
-														</div>
-														<div class="text-muted">[d̡]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															dzi
-														</div>
-														<div class="text-muted">[ʤi]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ẽ
-														</div>
-														<div class="text-muted">[ɛ̃]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ĩ
-														</div>
-														<div class="text-muted">[ĩ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ŋw
-														</div>
-														<div class="text-muted">[ŋw͡]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															õ
-														</div>
-														<div class="text-muted">[ɔ̃]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															si
-														</div>
-														<div class="text-muted">[ʃi]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ty
-														</div>
-														<div class="text-muted">[ƫ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="row row-cards">
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															tsi
-														</div>
-														<div class="text-muted">[ʧi]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															ũ
-														</div>
-														<div class="text-muted">[ũ]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-auto">
-										<div class="card card-sm">
-											<div class="card-body">
-												<div class="row align-items-center">
-													<div class="col-auto">
-														<div class="font-weight-medium">
-															zi
-														</div>
-														<div class="text-muted">[ʒi]</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<footer class="footer footer-transparent d-print-none">
-					<div class="container-xl">
-						<div
-							class="row text-center align-items-center flex-row-reverse"
-						>
-							<div class="col-lg-auto ms-lg-auto">
-								<ul class="list-inline list-inline-dots mb-0">
-									<li class="list-inline-item">
-										Desiged and Developed by
-										<a
-											href="https://emergingenglishcoaching.com/"
-											target="_blank"
-											class="link-secondary text-primary"
-											rel="noopener"
-											>VerdellBC </a
-										>&
-										<a
-											href="https://oheneadjei.com/"
-											target="_blank"
-											class="link-secondary text-primary"
-											rel="noopener"
-											>Ohene Adjei
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												class="icon text-pink icon-filled icon-inline"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												stroke-width="2"
-												stroke="currentColor"
-												fill="none"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-											>
-												<path
-													stroke="none"
-													d="M0 0h24v24H0z"
-													fill="none"
-												/>
-												<path
-													d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
-												/></svg
-										></a>
-									</li>
-								</ul>
-							</div>
-							<div class="col-12 col-lg-auto mt-3 mt-lg-0">
-								<ul class="list-inline list-inline-dots mb-0">
-									<li class="list-inline-item">
-										Copyright &copy; 2022
-										<a
-											target="_blank"
-											href="https://emergingenglishcoaching.com/"
-											class="link-secondary"
-											>EEC</a
-										>. All rights reserved.
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
-		</div>
-		<!-- Tabler Core -->
-		<script src="./dist/js/tabler.min.js?1668287865" defer></script>
-		<script src="./dist/js/demo.min.js?1668287865" defer></script>
-		<!-- Vercel Analytics -->
-		<script defer src="/_vercel/insights/script.js"></script>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            <h1>
+              Ɛʋɛ(gbe) <br /><span class="text-muted">Ewe(gbe) [ɛ'βɛ]</span>
+            </h1>
+            <div class="row row-deck row-cards">
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">A a</div>
+                            <div class="text-muted">[a]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">B b</div>
+                            <div class="text-muted">[b]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">D d</div>
+                            <div class="text-muted">[d]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Đ ɖ</div>
+                            <div class="text-muted">[ɖ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Dz dz</div>
+                            <div class="text-muted">[ʣ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">E e</div>
+                            <div class="text-muted">[e]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ɛ ɛ</div>
+                            <div class="text-muted">[ɛ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ə ə</div>
+                            <div class="text-muted">[ə]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">F f</div>
+                            <div class="text-muted">[f]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ƒ ƒ</div>
+                            <div class="text-muted">[ɸ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">G g</div>
+                            <div class="text-muted">[g]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Gb gb</div>
+                            <div class="text-muted">[gb͡]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ɣ ɣ</div>
+                            <div class="text-muted">[ɣ~ʁ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">H h</div>
+                            <div class="text-muted">[h]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">I i</div>
+                            <div class="text-muted">[i]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">K k</div>
+                            <div class="text-muted">[k]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Kp kp</div>
+                            <div class="text-muted">[kp͡]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">L l</div>
+                            <div class="text-muted">[l]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">M m</div>
+                            <div class="text-muted">[m/m̩]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">N n</div>
+                            <div class="text-muted">[n]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ny ny</div>
+                            <div class="text-muted">[ɲ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ŋ ŋ</div>
+                            <div class="text-muted">[ŋ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">O o</div>
+                            <div class="text-muted">[o]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ɔ ɔ</div>
+                            <div class="text-muted">[ɔ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">P p</div>
+                            <div class="text-muted">[p]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">R r</div>
+                            <div class="text-muted">[r]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">S s</div>
+                            <div class="text-muted">[s]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">T t</div>
+                            <div class="text-muted">[t]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ts ts</div>
+                            <div class="text-muted">[ʦ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">U u</div>
+                            <div class="text-muted">[u]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">V v</div>
+                            <div class="text-muted">[v]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Ʋ ʋ</div>
+                            <div class="text-muted">[β]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">W w</div>
+                            <div class="text-muted">[w]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">X x</div>
+                            <div class="text-muted">[x]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Y y</div>
+                            <div class="text-muted">[y]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">Z z</div>
+                            <div class="text-muted">[z]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3>Other letters/letter combinations</h3>
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ã</div>
+                            <div class="text-muted">[ã]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">dy</div>
+                            <div class="text-muted">[d̡]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">dzi</div>
+                            <div class="text-muted">[ʤi]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ẽ</div>
+                            <div class="text-muted">[ɛ̃]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ĩ</div>
+                            <div class="text-muted">[ĩ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ŋw</div>
+                            <div class="text-muted">[ŋw͡]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">õ</div>
+                            <div class="text-muted">[ɔ̃]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">si</div>
+                            <div class="text-muted">[ʃi]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ty</div>
+                            <div class="text-muted">[ƫ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row row-cards">
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">tsi</div>
+                            <div class="text-muted">[ʧi]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">ũ</div>
+                            <div class="text-muted">[ũ]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card card-sm">
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <div class="font-weight-medium">zi</div>
+                            <div class="text-muted">[ʒi]</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-lg-auto ms-lg-auto">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Desiged and Developed by
+                    <a
+                      href="https://emergingenglishcoaching.com/"
+                      target="_blank"
+                      class="link-secondary text-primary"
+                      rel="noopener"
+                      >VerdellBC
+                    </a>
+                    <a
+                      href="https://oheneadjei.com/"
+                      target="_blank"
+                      class="link-secondary text-primary"
+                      rel="noopener"
+                      >Ohene Adjei
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon text-pink icon-filled icon-inline"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                        /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    Copyright &copy; 2022
+                    <a
+                      target="_blank"
+                      href="https://emergingenglishcoaching.com/"
+                      class="link-secondary"
+                      >EEC</a
+                    >. All rights reserved.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js?1668287865" defer></script>
+    <script src="./dist/js/demo.min.js?1668287865" defer></script>
+    <!-- Vercel Analytics -->
+  </body>
 </html>
