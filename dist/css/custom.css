@@ -26,18 +26,16 @@
 }
 
 
-.alphabets{
 
+
+.seven-vowels .card-body{
+background-color: darksalmon;
 }
 
-.seven-vowels{
-
+.nasal-vowels .card-body{
+background-color: palegreen;
 }
 
-.nasal-vowels{
-
-}
-
-.digraphs{
-
+.digraphs .card-body{
+  background-color: rgb(220, 182, 255);
 }
