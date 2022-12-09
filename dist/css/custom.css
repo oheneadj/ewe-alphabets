@@ -33,9 +33,9 @@ background-color: darksalmon;
 }
 
 .nasal-vowels .card-body{
-background-color: palegreen;
+background-color: rgb(111, 130, 184);
 }
 
 .digraphs .card-body{
-  background-color: rgb(220, 182, 255);
+  background-color: rgb(133, 100, 163);
 }
