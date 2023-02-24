@@ -1,5 +1,5 @@
 const digraphs = ["ts", "tsy", "dz", "kp", "gb", "ny"];
-const nasalVowels = ["a", "e", "ɛ", "i", "ɔ", "o", "ũ"];
+const nasalVowels = ["aa", "ee", "ɛɛ", "ii", "ɔɔ", "oo", "ũ"];
 const vowels = ["Aa", "Ee", "Ɛɛ", "Ii", "Oo", "Ɔɔ", "Uu"];
 const consonants = [
   "a",
@@ -74,6 +74,7 @@ consonants.forEach((consonant) => {
   const btn = document.querySelector(`.${consonant}`);
   console.log(btn);
   btn.addEventListener("click", () => {
+    alert("working");
     // stopSongs();
     // document.getElementById(consonant).play();
   });
