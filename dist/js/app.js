@@ -72,11 +72,11 @@ nasalVowels.forEach((nasalVowel) => {
 //Consonants
 consonants.forEach((consonant) => {
   const btn = document.querySelector(`.${consonant}`);
-  console.log(btn);
+ 
   btn.addEventListener("click", () => {
     alert("working");
-    // stopSongs();
-    // document.getElementById(consonant).play();
+    stopSongs();
+    document.getElementById(consonant).play();
   });
 });
 
