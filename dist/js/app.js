@@ -38,20 +38,16 @@ const consonants = [
 //digraphs
 digraphs.forEach((digraph) => {
     const btn = document.querySelector(`.${digraph}`);
-    console.log(btn);
     btn.addEventListener("click", () => {
-        alert("working");
-        // stopSongs();
-        // document.getElementById(digraph).play();
+        stopSongs();
+        document.getElementById(digraph).play();
     });
 });
 
 //Vowels
 vowels.forEach((vowel) => {
     const btn = document.querySelector(`.${vowel}`);
-    console.log(btn);
     btn.addEventListener("click", () => {
-
         stopSongs();
         document.getElementById(vowel).play();
     });
@@ -60,44 +56,41 @@ vowels.forEach((vowel) => {
 //nasalVowels
 nasalVowels.forEach((nasalVowel) => {
     const btn = document.querySelector(`.${nasalVowel}`);
-    console.log(btn);
     btn.addEventListener("click", () => {
-        alert("working");
         // stopSongs();
         // document.getElementById(nasalVowel).play();
     });
 });
 
-//Consonants
+// Consonants
 consonants.forEach((consonant) => {
     const btn = document.querySelector(`.${consonant}`);
 
     btn.addEventListener("click", () => {
-
         stopSongs();
         document.getElementById(consonant).play();
     });
 });
 
-// === Functions to stop sounds ========
+// === Functions to stop sounds ===
 
 //Stop all sounds
 const stopSongs = () => {
-//    stopDigraphSongs();
-//    stopNasalVowelSongs();
+    stopDigraphSongs();
+    //    stopNasalVowelSongs();
     stopVowelSongs();
     stopConsonantSongs();
 };
 
 //stop playing current digraphs sound
-//const stopDigraphSongs = () => {
-//    digraphs.forEach((digraph) => {
-//        const song = document.getElementById(digraph);
-//
-//        song.pause();
-//        song.currentTime = 0;
-//    });
-//};
+const stopDigraphSongs = () => {
+    digraphs.forEach((digraph) => {
+        const song = document.getElementById(digraph);
+
+        song.pause();
+        song.currentTime = 0;
+    });
+};
 
 //stop playing current vowel sound
 const stopVowelSongs = () => {
