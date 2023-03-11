@@ -25,17 +25,35 @@
   border-radius: 4px;
 }
 
-
-
-
-.seven-vowels .card-body{
-background-color: darksalmon;
+.seven-vowels .card-body {
+  background-color: darksalmon;
 }
 
-.nasal-vowels .card-body{
-background-color: rgb(111, 130, 184);
+.nasal-vowels .card-body {
+  background-color: rgb(111, 130, 184);
 }
 
-.digraphs .card-body{
+.digraphs .card-body {
   background-color: rgb(133, 100, 163);
+}
+
+.a,
+.e .ɛ,
+.i,
+.o,
+.ɔ,
+.u {
+  background-color: #8c52ff;
+  color: black;
+}
+
+.a div .text-muted,
+.e,
+.ɛ,
+.i,
+.o,
+.ɔ,
+.u {
+  background-color: #8c52ff;
+  color: black;
 }

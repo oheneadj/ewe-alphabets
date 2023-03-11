@@ -45,23 +45,23 @@ digraphs.forEach((digraph) => {
   });
 });
 
-//Vowels
-vowels.forEach((vowel) => {
-  const btn = document.querySelector(`.${vowel}`);
-  btn.addEventListener("click", () => {
-    stopSongs();
-    document.getElementById(vowel).play();
-  });
-});
+// //Vowels
+// vowels.forEach((vowel) => {
+//   const btn = document.querySelector(`.${vowel}`);
+//   btn.addEventListener("click", () => {
+//     stopSongs();
+//     document.getElementById(vowel).play();
+//   });
+// });
 
 //nasalVowels
-nasalVowels.forEach((nasalVowel) => {
-  const btn = document.querySelector(`.${nasalVowel}`);
-  btn.addEventListener("click", () => {
-    stopSongs();
-    document.getElementById(nasalVowel).play();
-  });
-});
+// nasalVowels.forEach((nasalVowel) => {
+//   const btn = document.querySelector(`.${nasalVowel}`);
+//   btn.addEventListener("click", () => {
+//     stopSongs();
+//     document.getElementById(nasalVowel).play();
+//   });
+// });
 
 // Consonants
 consonants.forEach((consonant) => {
@@ -79,7 +79,7 @@ consonants.forEach((consonant) => {
 const stopSongs = () => {
   stopDigraphSongs();
   //    stopNasalVowelSongs();
-  stopVowelSongs();
+  //   stopVowelSongs();
   stopConsonantSongs();
 };
 
@@ -93,25 +93,25 @@ const stopDigraphSongs = () => {
   });
 };
 
-//stop playing current vowel sound
-const stopVowelSongs = () => {
-  vowels.forEach((vowel) => {
-    const song = document.getElementById(vowel);
+// //stop playing current vowel sound
+// const stopVowelSongs = () => {
+//   vowels.forEach((vowel) => {
+//     const song = document.getElementById(vowel);
 
-    song.pause();
-    song.currentTime = 0;
-  });
-};
+//     song.pause();
+//     song.currentTime = 0;
+//   });
+// };
 
-//stop playing current nasalVowel sound
-const stopNasalVowelSongs = () => {
-  nasalVowels.forEach((nasalVowel) => {
-    const song = document.getElementById(nasalVowel);
+// //stop playing current nasalVowel sound
+// const stopNasalVowelSongs = () => {
+//   nasalVowels.forEach((nasalVowel) => {
+//     const song = document.getElementById(nasalVowel);
 
-    song.pause();
-    song.currentTime = 0;
-  });
-};
+//     song.pause();
+//     song.currentTime = 0;
+//   });
+// };
 
 //stop playing current consonant sound
 const stopConsonantSongs = () => {
